@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/chigvero/modules/internal/storage"
 	"log"
+
+	"github.com/chigvero/modules/internal/storage"
 )
 
 func main() {
