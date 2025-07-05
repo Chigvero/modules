@@ -1,4 +1,4 @@
-module github.com/chigvero/storage
+module github.com/chigvero/modules
 
 go 1.24.2
 

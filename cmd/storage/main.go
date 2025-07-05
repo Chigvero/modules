@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/chigvero/storage/internal/storage"
+	"github.com/chigvero/modules/internal/storage"
 )
 
 func main() {
