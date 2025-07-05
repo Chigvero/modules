@@ -3,10 +3,19 @@ package main
 import (
 	"fmt"
 	"github.com/chigvero/modules/internal/storage"
+	"log"
 )
 
 func main() {
 	st := storage.NewStorage()
 
-	fmt.Println("it works", st)
+	file, err := st.Upload("test.txt", []byte("hello"))
+	if err != nil {
+		log.Fatalf("%v", err)
+	}
+	restoredFile, err := st.GetByID(file.ID)
+	if err != nil {
+		log.Fatalf("%v", err)
+	}
+	fmt.Println("it is restored", *restoredFile)
 }
